@@ -767,7 +767,8 @@ swiper-container.mySwiper {
     max-width: 3999px;
     margin: auto;
     height: 100%;
-    max-height: 900px;
+    max-height: 700px;
+    background-color: #DCCABC;
 }
 /* .preferencecontainer::before {
     content: '';
