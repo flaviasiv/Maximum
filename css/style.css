@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* primary main #E8C948 // 95E5FF
    secondary low #DCCABC // DCCABC
 */
-
 body{
     font-family: 'Urbanist', sans-serif;
 }
@@ -16,26 +14,34 @@ main{
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 30px; 
 }
 header {
     position: relative;
     display:flex;
     justify-content: space-between;
     width:100%;
-    max-width:3900px;
+    max-width:9999px;
     margin: auto;
-    background-color:transparent;
     height: 0px;
     z-index: 99999;
 }
-#home:before {
+#home{
+    position: fixed;
+    height: 80px;
+    left: 0;
+    right: 0;
+    width: 9999px;
+    z-index: 99;
+    box-sizing: border-box;
+}
+#home::before {
     content: '';
     position: fixed;
     height: 80px;
     left: 0;
     right: 0;
-    width: 3900px;
-    background-color:transparent;
+    width: 9999px;
     z-index: 99;
     box-sizing: border-box;
 }
@@ -43,10 +49,9 @@ header {
     display: block;
     position: relative;
     background-color: transparent;
-    width: 280px;
+    width: 200px;
 }
 .navbar{   
-    z-index: 999;
     display:flex;
     justify-content: space-between;
     position: fixed;
@@ -56,15 +61,17 @@ header {
     top: 0;
     z-index: 99;
     width: 100%;
-    max-width: 1400px;
+    max-width: 9999px;
     margin: auto;
-    padding: 20px 50px 5px 0px;
+    background-color:#33333340;
+    padding: 0px 50px 5px 0px;
+    height: 80px;
+    scroll-behavior: smooth;
+    transition: 0.7s;
 } 
 .menu-links{
-    color:#fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -123,13 +130,12 @@ header {
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%;
     align-items: center;
     padding: 8px 0px;
     width: 119px;
 }
-
 
 .menu-linksbtn a:hover,
 .menu-linksbtn a.active {
@@ -141,20 +147,21 @@ header {
 z-index: 9;
 display:block;
 width: 75px;
-top: 10px;
+top: -25px;
 left: 25px;
 position: absolute;
 }
+.logow{display: none;}
 @media only screen and (max-width: 1100px) {
-    .nonebar{display: none}
-    .logo-m{
+    .logow{
     z-index: 9;
     display:block;
     width: 65px;
-    top: 10px;
+    top: 15px;
     left: 25px;
     position: absolute;
     }
+    .logo-m{display: none;}
   .box{
     width: fit-content;
     height: 0vh;
@@ -191,7 +198,7 @@ position: absolute;
     z-index: 2;
     width: fit-content;
     height: auto;
-    margin: 20px;
+    margin: 25px;
     position: absolute;
     border-radius: 4px;
     cursor: pointer;
@@ -227,17 +234,17 @@ position: absolute;
       padding: 0px;
   }
   .menu-links{
-    background-color:transparent;
+    background-color:#33333340;
   flex-direction: column;
   align-items:center;
-  margin-top: 0px;
+  margin-top: 80px;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 50px;
+  padding-top: 0px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  height:330px
+  height:380px
   }
   .menu-links ul{
       display: block;
@@ -296,7 +303,7 @@ position: absolute;
   #home {
   display:flex;
   flex-direction:column;
-  max-width: 400px;
+  max-width: 1400px;
   text-align: right;
   align-items: end;
   }   
@@ -408,6 +415,10 @@ position: absolute;
 }
 .wave .content{
     height: 500px;
+}
+.waveport{
+    margin-top: -100px;
+    background-color: #FFF6D1;
 }
 .aboutcontainer{
     background-color: #030606;
@@ -533,24 +544,26 @@ position: absolute;
     max-width: 3999px;
     margin: auto;
     z-index: 999;
-    margin-top: -300px;
+    margin-top: -270px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
 .services{
     position: relative;
     width: 100%;
-    max-width: 3900px;
+    max-width: 1400px;
     margin: auto;
     padding: 250px 0 40px 0;
-    color: #fff;
+    color: #030606;
     z-index: 999;
 }
 .servicestitle{
-    text-align: center;
+    display: flex;
     font-family: 'Urbanist', sans-serif;
-    max-width: 295px;
+    max-width: 495px;
     margin: auto;
+    float: right;
+    margin-top: -140px;
 }
 .servicescontainer .servicestitle h2{
     display: flex;
@@ -563,9 +576,6 @@ position: absolute;
     line-height: 100%; 
     margin-bottom: 0px;
     padding-top:80px;
-}
-.servicestitle h2 svg{
-    margin-top: 16px;
 }
 .servicestitle p{
     font-size: 16px;
@@ -591,6 +601,8 @@ swiper-container.mySwiper {
     margin: 0 !important;
   }
   swiper-slide.swiper1 {
+    position: relative;
+    z-index: 9999;
     max-width: 310px;
     border-radius: 30px;
     margin-left: 0px;
@@ -603,13 +615,12 @@ swiper-container.mySwiper {
     max-width: 9500px;
     margin: -2px auto;
     height: 100%;
-    max-height: 490px;
+    max-height: 790px;
 }
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
     display: flex;
     position: relative;
-    z-index: 9999;
     background-color: #DCCABC;
     width: 100%;
     max-width: 1350px;
@@ -701,7 +712,7 @@ swiper-container.mySwiper {
   margin-top: 25px;
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-@media screen and (max-width:1300px) {
+/* @media screen and (max-width:1300px) {
     .maincontainer{
         display: flex;
         flex-wrap: wrap;
@@ -732,7 +743,7 @@ swiper-container.mySwiper {
         padding: 0;
         text-align: center;
     }    
-}
+} */
   .scene {
     display: inline-block;
     perspective: 600px;
@@ -941,8 +952,8 @@ swiper-container.mySwiper {
     padding-top: 50;
     margin-bottom: 120px;
     height: 100%;
-    max-height: 750px;
-    background-color: #E8C948;
+    max-height: 600px;
+    background-color: #fff;
 }
 .wavec2{
     position: absolute;
@@ -977,19 +988,20 @@ swiper-container.mySwiper {
 .bgs-reviews2{
     position: absolute;
     right: 0;
-    opacity: 50%;
+    opacity: 70%;
     bottom: 50;
 }
 .bgs-reviews1{
     position: absolute;
     top: 390;
     left: 100;
-    opacity: 50%;
+    opacity: 70%;
+    z-index: 0;
 }
 .bgs-reviews3{
     position: absolute;
     right: 100;
-    opacity: 50%;
+    opacity: 70%;
     top: 50;
 }
 .review{
@@ -1020,7 +1032,7 @@ swiper-container.mySwiper {
 .mySwiper3{
   width: 100%;
   height: 100%;
-  max-height: 490px;
+  max-height: 390px;
   cursor: grab;
   margin: 0 !important;
 }
@@ -1031,9 +1043,9 @@ swiper-container.mySwiper {
   display: flex;
   justify-content: center;
   max-width: 299px;
-  max-height: 430;
+  max-height: 330;
   border-radius: 23px;
-  border: 2px solid #003D5A;
+  border: 1px solid #3D3D3D;
   background-color: transparent;
   margin-left: 25px;
   padding: 30px 16px;
@@ -1123,7 +1135,7 @@ letter-spacing: 0em;
 text-align: center;
 }
 .portifoliocontainer{
-    background-color: #fff;
+    background-color: #FFF6D1;
     width: 100%;
     max-width: 9290px;
     margin: auto;
@@ -1131,9 +1143,12 @@ text-align: center;
     height: auto;
 }
 .portifolio{
+    position: relative;
     width: 100%;
     max-width: 3960px;
     margin: auto;
+    margin-top: -200px;
+    z-index: 999;
 }
 .portifoliocontainer .portifoliotitle h2{
     font-family: 'Urbanist', sans-serif;
@@ -1155,7 +1170,7 @@ text-align: center;
 
 :root {
     --swiper-navigation-color: #eee;
-    --swiper-pagination-color: #8ad4ec;
+    --swiper-pagination-color: #E8C948;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
 }
@@ -1516,9 +1531,6 @@ line-height: 150%;
         flex-shrink: 0;
         z-index: 0;
     }
-    .formimgsbg{
-        display: none;
-    }
     .formgrid{
         height: auto;
         margin: auto;
@@ -1603,9 +1615,6 @@ line-height: 150%;
 }
 
 @media screen and (max-width:860px) {
-    .formimgsbg{
-        display: none;
-    }
     .formgrid{
         height: 1660;
         margin: auto;
