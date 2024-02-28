@@ -1222,7 +1222,6 @@ swiper-slide.swiper2 {
     right: 100;
     opacity: 70%;
     top: -200;
-
 }
 
 @media screen and (max-width:1200px) {
@@ -1235,6 +1234,15 @@ swiper-slide.swiper2 {
 .formimgsbg{
     right: 0;
     max-width: 150px;
+}
+.bgs-reviews2{
+    width: 200px;
+}
+.bgs-reviews3{
+    width: 200px;
+}
+.bgs-reviews1{
+    width: 200px;
 }
 }
 
