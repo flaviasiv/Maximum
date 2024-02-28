@@ -1313,6 +1313,9 @@ swiper-slide.swiper2 {
 }
 .bgs-mob{display: none;}
 
+.waveinvert {
+    background-color: transparent;
+}
 
 .formgrid{
     display: flex;
