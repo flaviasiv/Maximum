@@ -14,7 +14,7 @@ main{
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 30px; 
+    scroll-padding-top: 400px; 
 }
 header {
     position: relative;
@@ -924,7 +924,6 @@ swiper-container.mySwiper {
     max-height: 1250px;
 }
 } */
-
 .portifoliocontainer{
     position: relative;
     background-color: #FFF6D1;
@@ -1151,7 +1150,28 @@ swiper-slide.swiper2 {
     position: absolute;
     right: 100;
     opacity: 70%;
+    top: 0;
+}
+.formimgsbg{
+    right: 0;
+}
+.bgsreview2{
+    right: 50;
     top: 50;
+}
+.bgport{
+    width: 500px;
+    bottom: -90;
+}
+.bgspref{
+    top: 150;
+}
+.bgs-reviews4{
+    position: absolute;
+    right: 100;
+    opacity: 70%;
+    top: -200;
+
 }
 .review{
     display: block;
