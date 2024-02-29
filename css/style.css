@@ -483,11 +483,6 @@ position: absolute;
     max-width: 849px;
     margin-left: 23px;
 }
-.bgs-web-aboutt{
-    width:100%;
-    max-width: 560px;
-    z-index: 99;
-}
 .abouttextmain{
     position: relative;
     display: flex;
@@ -513,16 +508,21 @@ position: absolute;
     max-width: 100%;
     margin-right: 100px;
 }
-/* .reveal{
+.reveal{
     position: relative;
     transform: translateX(-50%);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
 }
 .reveal.active{
     transform: translateX(0%);
     opacity: 1;
-} */
+} 
+.bgs-web-aboutt:hover{
+  max-width: calc(100% + 5%);
+  transition: 1s all ease-in-out;
+  margin-right: 95px;
+}
 @media screen and (max-width:1250px) {
     .about{
     padding:70px 10px 300px 10px;

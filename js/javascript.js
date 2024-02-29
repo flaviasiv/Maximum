@@ -16,56 +16,54 @@ document.onclick = function(e){
 // scroll navbar
 const navbar = document.getElementById("homenav");
 
-            let lastScrollTop = 0;
-            addEventListener("scroll", () => {
-                // Current scroll position
-                const scrollTop =
-                    window.pageYOffset || document.documentElement.scrollTop;
+let lastScrollTop = 0;
+addEventListener("scroll", () => {
+    // Current scroll position
+    const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
-                // check scroll direction
-                const distance = scrollTop - lastScrollTop;
-                const currentTop = parseInt(
-                    getComputedStyle(navbar).top.split("px")
-                );
+    // check scroll direction
+    const distance = scrollTop - lastScrollTop;
+    const currentTop = parseInt(
+        getComputedStyle(navbar).top.split("px")
+    );
 
-                // Clamp value between -80 and 0
-                let amount = Math.max(
-                    Math.min(
-                        currentTop +
-                            (distance < 0
-                                ? Math.abs(distance) // scrolling up
-                                : -Math.abs(distance)// scrolling down
-                                ) * 40, // (1)
-                        0
-                    ),
-                    -80
-                );
+    // Clamp value between -80 and 0
+    let amount = Math.max(
+        Math.min(
+            currentTop +
+                (distance < 0
+                    ? Math.abs(distance) // scrolling up
+                    : -Math.abs(distance)// scrolling down
+                    ) * 40, // (1)
+            0
+        ),
+        -80
+    );
 
-                console.log(amount, currentTop, Math.abs(distance));
-
-                navbar.style.top = `${amount}px`;
-
-                lastScrollTop = scrollTop;
-            });
+    console.log(amount, currentTop, Math.abs(distance));
+    navbar.style.top = `${amount}px`;
+    lastScrollTop = scrollTop;
+});
 
 // scroll behavior
-// function reveal() {
-//   var reveals = document.querySelectorAll(".reveal");
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
-//   for (var i = 0; i < reveals.length; i++) {
-//     var windowHeight = window.innerHeight;
-//     var elementTop = reveals[i].getBoundingClientRect().top;
-//     var elementVisible = 100;
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
 
-//     if (elementTop < windowHeight - elementVisible) {
-//       reveals[i].classList.add("active");
-//     } else {
-//       reveals[i].classList.remove("active");
-//     }
-//   }
-// }
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
 
-// window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);
 
 //cards flip ao clicar
 
