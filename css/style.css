@@ -14,7 +14,7 @@ main{
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 400px; 
+    scroll-padding-top: 500px; 
 }
 header {
     position: relative;
@@ -466,8 +466,8 @@ position: absolute;
 .abouttext{ 
     display: flex;
     max-width: 950px;
-    margin: auto;
-    margin-top: -300px;
+    margin-top: -400px;
+    margin-left: 50px;
 }
 .about h2{
     color: #E8C948;
@@ -483,21 +483,17 @@ position: absolute;
     max-width: 849px;
     margin-left: 23px;
 }
-.abouttextmain{
-    display: flex;
-    justify-content: center;
-    padding: 60px 0;
-}
 .bgs-web-aboutt{
     width:100%;
     max-width: 560px;
     z-index: 99;
 }
 .abouttextmain{
+    position: relative;
     display: flex;
     padding: 60px 0;
-    max-width: 1000px;
-    justify-content: space-between;
+    max-width: 1800px;
+    margin: auto;
 }
 .abouttextmain p{
     display: flex;
@@ -513,9 +509,9 @@ position: absolute;
     color: #E8C948;
     margin-top: 30px;
 }
-.abouttextmain p img{
-    max-width: 220px;
-    max-height: 60px;
+.abouttextmain img{
+    max-width: 100%;
+    margin-right: 100px;
 }
 /* .reveal{
     position: relative;
@@ -529,7 +525,7 @@ position: absolute;
 } */
 @media screen and (max-width:1250px) {
     .about{
-    padding:0px 10px 300px 10px;
+    padding:70px 10px 300px 10px;
     }
 }
 @media screen and (max-width:990px) {
@@ -574,9 +570,8 @@ position: absolute;
         line-height: 200%;
         margin-top: 40px
     }
-    .abouttextmain p img{
-        max-width: 520px;
-        max-height: 360px;
+    .abouttextmain img{
+        margin: auto;
     }
 }
 .waveservices{
@@ -604,7 +599,8 @@ position: absolute;
     font-family: 'Urbanist', sans-serif;
     max-width: 665px;
     margin: auto;
-    margin-top: -300px;
+    margin-top: -450px;
+    padding-right: 50px;
     float: right;
 }
 .servicescontainer .servicestitle h2{
@@ -647,7 +643,7 @@ swiper-container.mySwiper {
     height: 100%;
     max-height: 520px;
     z-index: 999;
-    margin-top: -100px;
+    margin-top: -250px;
 }
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
@@ -759,6 +755,13 @@ swiper-container.mySwiper {
     }
     .servicescontainer{
         max-height: 990px;
+    }
+    .cardcontainer{
+        margin-top: -200px;
+    }
+    .servicestitle{    
+        margin-top: -400px;
+
     }
 }
 @media screen and (max-width:990px) {
@@ -928,10 +931,10 @@ swiper-container.mySwiper {
 }
 @media screen and (max-width:1290px) {
     .preferencecontainer{
-        max-height: 1080px;
+        max-height: 1000px;
     }
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 870px) {
     .preferencecontainer{
         height: 1000px;
         max-height: 1990px;
@@ -942,7 +945,7 @@ swiper-container.mySwiper {
         justify-content: center;
         width: 100%;
         max-width: 665px;
-        margin: auto;
+        margin: 0;
         padding: 150px 50px 40px;
     }
     .preference h2{
@@ -999,7 +1002,6 @@ swiper-container.mySwiper {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding:0px 0 250px 0;
     color: #030606;
     z-index: 999;
 }
@@ -1008,8 +1010,9 @@ swiper-container.mySwiper {
     font-family: 'Urbanist', sans-serif;
     max-width: 665px;
     margin: auto;
-    margin-top: -350px;
+    margin-top: -250px;
     float: right;
+    padding-right: 50px;
 }
 .portifolio h2{
     display: flex;
@@ -1042,7 +1045,7 @@ swiper-container.mySwiper2 {
   max-height: 735px;
   cursor: grab;
     margin: 0 ;
-    margin-top: -350px;
+    margin-top: -250px;
 }
 swiper-slide.swiper2 {
   max-width: 706px;
@@ -1063,9 +1066,10 @@ swiper-slide.swiper2 {
     swiper-container.mySwiper2 {
       max-height: 630px;
       cursor: grab;
-    }
+}
     .portifoliotitle{
-        margin-top: -280px;
+        margin-top: -100px;
+        padding-bottom: 60px;
     }
     swiper-slide.swiper2 {  
             max-width: 570px;
@@ -1084,7 +1088,7 @@ swiper-slide.swiper2 {
 }
 @media screen and (max-width:970px) {
     .portifoliocontainer{
-        padding: 0 0 300px 10;
+        padding: 0 0 300px 0;
     }
     .portifolio{
         position: relative;
@@ -1094,7 +1098,7 @@ swiper-slide.swiper2 {
         padding:0;
         color: #030606;
         z-index: 999;
-        padding: 0 40px;
+        padding: 0 50px;
     }
     .portifoliotitle{
         display: flex;
@@ -1186,8 +1190,8 @@ swiper-slide.swiper2 {
     position: absolute;
     right: 50;
     opacity: 70%;
-    top: 50;
-    width: 120px;
+    top: 70;
+    width: 220px;
 }
 .bgport{
     width: 500px;
@@ -1242,12 +1246,13 @@ swiper-slide.swiper2 {
     max-width: 1340px;
     margin: auto;
     padding: 0;
-    margin-top: -100px;
+    margin-top: -300px;
 }
 .reviewstitle{
-    margin-top: -250;
+    margin-top: -200;
     float: left;
     display: flex;
+    padding-left: 50px;
 }
 .reviewstitle h2{
     display: flex;
@@ -1332,6 +1337,9 @@ swiper-slide.swiper2 {
 }
 }
 @media screen and (max-width: 890px) {
+    .reviewscontainer{
+        max-height: 400px;
+    }
     .reviewstitle{
         margin-top: -100;
         float: left;
@@ -1584,7 +1592,7 @@ line-height: 150%;
     margin-top: 30px;
     border: none;
 } */
-@media screen and (max-width:1290px) {
+@media screen and (max-width:1250px) {
     .bgs-web{
         display: none;
     }
