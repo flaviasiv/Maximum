@@ -67,23 +67,23 @@ window.addEventListener("scroll", reveal);
 
 //cards flip ao clicar
 
-var cards = document.querySelectorAll('.card');
+// var cards = document.querySelectorAll('.card');
 
-[...cards].forEach((card)=>{
-  card.addEventListener( 'click', function() {
-    card.classList.toggle('is-flipped');
-  });
-});
+// [...cards].forEach((card)=>{
+//   card.addEventListener( 'click', function() {
+//     card.classList.toggle('is-flipped');
+//   });
+// });
 
-//pop-up form
-let popup = document.getElementById("popup");
+// //pop-up form
+// let popup = document.getElementById("popup");
 
-function openPopup(){
-  popup.classList.add("open-popup");
-}
-function closePopup(){
-  popup.classList.remove("open-popup");
-}
+// function openPopup(){
+//   popup.classList.add("open-popup");
+// }
+// function closePopup(){
+//   popup.classList.remove("open-popup");
+// }
 
 
 //countUp about
