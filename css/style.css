@@ -465,7 +465,7 @@ position: absolute;
 }
 .abouttext{ 
     display: flex;
-    max-width: 950px;
+    max-width: 1150px;
     margin-top: -400px;
     margin-left: 50px;
 }
@@ -480,7 +480,7 @@ position: absolute;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    max-width: 849px;
+    max-width:909px;
     margin-left: 23px;
 }
 .abouttextmain{
@@ -534,7 +534,7 @@ position: absolute;
     }
     .abouttext{ 
         flex-direction: column;
-        margin: -150 50 30 50;
+        margin: -150 40 30 40;
     }
     .abouttext h2{
         font-size: 12;
@@ -570,9 +570,6 @@ position: absolute;
         line-height: 200%;
         margin-top: 40px
     }
-    .abouttextmain img{
-        margin: auto;
-    }
 }
 .waveservices{
     background-color: #DCCABC;
@@ -597,9 +594,9 @@ position: absolute;
 .servicestitle{
     display: flex;
     font-family: 'Urbanist', sans-serif;
-    max-width: 665px;
+    max-width: 795px;
     margin: auto;
-    margin-top: -450px;
+    margin-top: -530px;
     padding-right: 50px;
     float: right;
 }
@@ -613,7 +610,7 @@ position: absolute;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    max-width: 459px;
+    max-width: 635px;
     margin-left: 23px;
 }
 
@@ -621,7 +618,7 @@ swiper-container.mySwiper {
     width: 100%;
     max-width: 9999px;
     height: 100%;
-    max-height: 735px;
+    max-height: 705px;
     cursor: grab;
     margin: 0 !important;
   }
@@ -641,9 +638,9 @@ swiper-container.mySwiper {
     max-width: 9500px;
     margin: auto;
     height: 100%;
-    max-height: 520px;
+    max-height: 480px;
     z-index: 999;
-    margin-top: -250px;
+    margin-top: -150px;
 }
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
@@ -743,12 +740,8 @@ swiper-container.mySwiper {
  @media screen and (max-width:1300px) {
     .maincontainer{
         display: flex;
-        flex-wrap: wrap;
         row-gap: 24px;
-        max-width: 730px;
-    }
-    .maincontainer > div {
-        flex: 50%; 
+        max-width: 930px;
     }
     .thecard{
         margin-right: 20px;
@@ -757,24 +750,24 @@ swiper-container.mySwiper {
         max-height: 990px;
     }
     .cardcontainer{
-        margin-top: -200px;
+        margin-top: -50px;
     }
     .servicestitle{    
         margin-top: -400px;
-
     }
 }
 @media screen and (max-width:990px) {
     .services{
-        padding: 20px 50px;
+        padding: 150px 50px;
     }
     .servicestitle{
         display: flex;
         flex-direction: column;
         max-width: 665px;
         margin: auto;
-        margin-top: -160px;
+        margin-top: -300px;
         float: left;
+        padding: 0;
     }
     .servicescontainer .servicestitle h2{
         font-size: 12px;
@@ -796,7 +789,7 @@ swiper-container.mySwiper {
     }    
     .cardcontainer{
         max-height: 450px;
-        margin-top: -0px;
+        margin-top: -102px;
     }
 } 
   .scene {
@@ -1008,11 +1001,12 @@ swiper-container.mySwiper {
 .portifoliotitle{
     display: flex;
     font-family: 'Urbanist', sans-serif;
-    max-width: 665px;
+    max-width: 965px;
     margin: auto;
-    margin-top: -250px;
+    margin-top: -500px;
     float: right;
     padding-right: 50px;
+    padding-bottom: 50px;
 }
 .portifolio h2{
     display: flex;
@@ -1029,7 +1023,7 @@ swiper-container.mySwiper {
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
-    max-width: 529px;
+    max-width: 735px;
     margin-left: 23px;
 }
 
@@ -1045,7 +1039,7 @@ swiper-container.mySwiper2 {
   max-height: 735px;
   cursor: grab;
     margin: 0 ;
-    margin-top: -250px;
+    margin-top: 0px;
 }
 swiper-slide.swiper2 {
   max-width: 706px;
@@ -1067,8 +1061,11 @@ swiper-slide.swiper2 {
       max-height: 630px;
       cursor: grab;
 }
+.portifoliocontainer{
+    padding-bottom: 700px;
+}
     .portifoliotitle{
-        margin-top: -100px;
+        margin-top: -250px;
         padding-bottom: 60px;
     }
     swiper-slide.swiper2 {  
@@ -1098,7 +1095,7 @@ swiper-slide.swiper2 {
         padding:0;
         color: #030606;
         z-index: 999;
-        padding: 0 50px;
+        padding: 0 50px 230px;
     }
     .portifoliotitle{
         display: flex;
@@ -1454,10 +1451,10 @@ form {
     gap: 20px;
     width:700px;
     max-width: 100%;
-    height: 450px;
+    height: 470px;
     background-color: #FFF;
     border-radius: 25px;
-    padding: 70px 80px;
+    padding: 50px 80px;
 }
 #form input, textarea, select{
     width: 100%;
@@ -1484,6 +1481,7 @@ form button{
     padding: 10px;
     margin: auto;
     background-color: #E8C948;
+    border: 2px solid #fff;
     cursor: pointer;
 }
 form button:hover{
@@ -1604,12 +1602,12 @@ line-height: 150%;
         object-fit: cover;
         max-width: 2999px;
         height: 100%;
-        max-height: 1900;
+        max-height: 1900px;
         flex-shrink: 0;
         z-index: 0;
     }
     .formgrid{
-        height: auto;
+        height: 1270px;
         margin: auto;
         justify-content: space-around;
     }
@@ -1620,9 +1618,10 @@ line-height: 150%;
     margin-top: 90px;
 }
     .form{
-        width: 370px;
+        width: 670px;
         height: 900px;
         margin: 0 auto;
+        margin-bottom: 50px;
     }
     .form h2{
         font-size: 32;
@@ -1643,9 +1642,8 @@ line-height: 150%;
         display: flex;
         justify-content: right;
         flex-direction: column;
-        padding: 40px;
-        height: 384px;
-        gap: 15px;
+        padding: 50px;
+        height: 584px;
     }
     #form input, textarea, select{
         width: 100%;
@@ -1697,7 +1695,6 @@ line-height: 150%;
     .form{
         margin: auto;
         width: 370px;
-        height: 860px;
     }
     .form h2{
         font-size: 32;
@@ -1719,7 +1716,7 @@ line-height: 150%;
         justify-content: right;
         flex-direction: column;
         padding: 40px;
-        height: 394px;
+        height: 450px;
         gap: 15px;
     }
     #form input, textarea, select{
@@ -1735,17 +1732,6 @@ line-height: 150%;
     }
     #form select option:first{
         color: #000000a4;
-    }
-    form button{
-        margin-top: 15px;
-        width: 180px;
-        border-radius: 5px;
-        list-style: none;
-        border: 2px solid #fff;
-        border-radius: 16px;
-        padding: 10px;
-        margin: auto;
-        cursor: pointer;
     }
     .formgroup1, .formgroup2{
         display: flex;
@@ -1776,7 +1762,7 @@ footer{
     display: flex;
     justify-content: center;
     width: auto;
-    height: 90px;
+    height: 220px;
 }
 .footermenu ul li a {
     text-decoration: none;
@@ -1795,7 +1781,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70px;
+    height: 180px;
 }
 .footerimglogo{
     display: flex;
@@ -1827,8 +1813,16 @@ footer{
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    padding-top: 18px;
-    padding-left: 5px;
+    line-height: 160%; /* 25.6px */
+}
+.footersocials p:first-child{
+    padding-bottom: 15px;
+}
+.footersocials span{
+    padding-left: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
     line-height: 160%; /* 25.6px */
 }
 .footersocials ul {
@@ -1837,6 +1831,7 @@ footer{
     text-align: center;
     gap: 18px;
     padding-top: 10px;
+    padding-left: 5px;
 }
 .footersocials ul a{
     text-decoration: none;
