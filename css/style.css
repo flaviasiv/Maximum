@@ -466,7 +466,7 @@ position: absolute;
 .abouttext{ 
     display: flex;
     max-width: 1150px;
-    margin-top: -400px;
+    margin-top: -450px;
     margin-left: 50px;
 }
 .about h2{
@@ -476,17 +476,17 @@ position: absolute;
     flex-wrap: nowrap;
 }
 .abouttext p{
-    font-size:38px;
+    font-size:28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 120%;
     max-width:909px;
     margin-left: 23px;
 }
 .abouttextmain{
     position: relative;
     display: flex;
-    padding: 60px 0;
+    padding: 100px 0 50px;
     max-width: 1800px;
     margin: auto;
 }
@@ -498,6 +498,7 @@ position: absolute;
     font-size: 12px;
     font-weight: 500;
     line-height: 200%;
+    margin-left: 100px;
 }
 .abouttextmain p span{
     display: flex;
@@ -506,7 +507,15 @@ position: absolute;
 }
 .abouttextmain img{
     max-width: 100%;
-    margin-right: 100px;
+}
+.abouttextmain sub{
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    line-height: 90%;
 }
 .reveal{
     position: relative;
@@ -602,14 +611,14 @@ position: absolute;
 }
 .servicescontainer .servicestitle h2{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
     flex-wrap: nowrap;
 }
 .servicestitle p{
-    font-size:40px;
+    font-size:28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 120%;
     max-width: 635px;
     margin-left: 23px;
 }
@@ -620,7 +629,8 @@ swiper-container.mySwiper {
     height: 100%;
     max-height: 705px;
     cursor: grab;
-    margin: 0 !important;
+    margin: 0;
+    margin-top: -150px;
   }
   swiper-slide.swiper1 {
     position: relative;
@@ -640,6 +650,7 @@ swiper-container.mySwiper {
     height: 100%;
     max-height: 480px;
     z-index: 999;
+    margin-top: -20px;
 }
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
@@ -708,7 +719,7 @@ swiper-container.mySwiper {
         max-height: 990px;
     }
     .cardcontainer{
-        margin-top: -50px;
+        margin-top: 0px;
     }
     .servicestitle{    
         margin-top: -400px;
@@ -748,6 +759,7 @@ swiper-container.mySwiper {
     .cardcontainer{
         max-height: 450px;
         margin-top: -102px;
+        margin-bottom: 90px;
     }
 } 
   .wavec1{
@@ -763,6 +775,9 @@ swiper-container.mySwiper {
   @media screen and (max-width:1650px) {
       .wavec1{
           top: -100px;
+      }
+      .wavepref{
+        top: -60;
       }
       }
   @media screen and (max-width:1270px) {
@@ -788,7 +803,8 @@ swiper-container.mySwiper {
     height: 100%;
     max-height: 900px;
     background-color: #DCCABC;
-    margin-top: -2px;
+    margin-top: -70px;
+    z-index: 999;
 }
 .preference{
     z-index: 9;
@@ -811,10 +827,10 @@ swiper-container.mySwiper {
 .preference p{
     color: #E8C948;
     z-index: 9;
-    font-size:48px;
+    font-size:28px;
     font-style: normal;
-    font-weight: 100;
-    line-height: 100%;
+    font-weight: 400;
+    line-height: 120%;
     max-width: 529px;
     margin-left: 23px;
 }
@@ -949,10 +965,10 @@ swiper-container.mySwiper {
 .portifolio p{
     color: #030606;
     z-index: 9;
-    font-size:40px;
+    font-size:28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 120%;
     max-width: 735px;
     margin-left: 23px;
 }
@@ -991,7 +1007,7 @@ swiper-slide.swiper2 {
       cursor: grab;
 }
 .portifoliocontainer{
-    padding-bottom: 700px;
+    padding-bottom: 450px;
 }
     .portifoliotitle{
         margin-top: -250px;
@@ -1024,7 +1040,7 @@ swiper-slide.swiper2 {
         padding:0;
         color: #030606;
         z-index: 999;
-        padding: 0 50px 230px;
+        padding: 0 50px 100px;
     }
     .portifoliotitle{
         display: flex;
@@ -1191,10 +1207,10 @@ swiper-slide.swiper2 {
 .reviewstitle p{
     color: #030606;
     z-index: 9;
-    font-size:48px;
+    font-size:28px;
     font-style: normal;
-    font-weight: 300;
-    line-height: 100%;
+    font-weight: 400;
+    line-height: 120%;
     max-width: 430px;
     margin-left: 23px;
 }
@@ -1262,7 +1278,7 @@ swiper-slide.swiper2 {
     margin-top: -100;
 }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 990px) {
     .reviewscontainer{
         max-height: 400px;
     }
