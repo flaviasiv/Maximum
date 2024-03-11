@@ -431,7 +431,7 @@ position: absolute;
         border-top-right-radius: 30%;
     }
     .wave .content{
-        height: 350px;
+        height: 250px;
     }
 }
 .aboutcontainer{
@@ -767,10 +767,20 @@ swiper-container.mySwiper {
         text-align: center;
     }    
     .cardcontainer{
-        max-height: 450px;
-        margin-top: -102px;
-        margin-bottom: 90px;
+        max-height: 570px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 100px;
     }
+    swiper-container.mySwiper {
+        width: 100%;
+        max-width: 9999px;
+        height: 100%;
+        max-height: 605px;
+        cursor: grab;
+        margin: 0;
+        margin-top: 0px;
+      }
 } 
   .wavec1{
       position: absolute;
@@ -896,7 +906,7 @@ swiper-container.mySwiper {
         width: 100%;
         max-width: 665px;
         margin: 0;
-        padding: 150px 50px 40px;
+        padding: 120px 50px 40px;
     }
     .preference h2{
         font-size: 12px;
@@ -1041,7 +1051,7 @@ swiper-slide.swiper2 {
 }
 @media screen and (max-width:970px) {
     .portifoliocontainer{
-        padding: 0 0 300px 0;
+        padding: 50 0 400px 0;
     }
     .portifolio{
         position: relative;
@@ -1051,7 +1061,7 @@ swiper-slide.swiper2 {
         padding:0;
         color: #030606;
         z-index: 999;
-        padding: 0 50px 100px;
+        padding: 0 50px 170px;
     }
     .portifoliotitle{
         display: flex;
@@ -1061,6 +1071,7 @@ swiper-slide.swiper2 {
         margin-top: -150px;
         float: left;
         padding: 0;
+        padding-bottom: 50px;
     }
     .portifolio h2{
         display: flex;
