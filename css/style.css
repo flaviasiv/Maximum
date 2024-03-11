@@ -361,14 +361,7 @@ position: absolute;
     font-weight: 400;
     padding-top: 40px;
 }
-.videop p span{
-    text-decoration:underline#E8C948 6px !important;
-    text-underline-offset:15px !important;
-    -webkit-text-decoration-line:  underline !important;
-    -webkit-text-decoration-color: #E8C948 !important;
-    -webkit-text-decoration-style: solid !important;
-    -webkit-text-decoration-thickness: 6px !important;
-}
+
 @media screen and (max-width:1250px) {
     .videop img{
         max-width: 300px;
@@ -429,7 +422,7 @@ position: absolute;
     margin-top: -270px;
     }
     .wave .content{
-        height: 500px;
+        height: 600px;
     }
 }
 @media screen and (max-width:950px) {
@@ -438,7 +431,7 @@ position: absolute;
         border-top-right-radius: 30%;
     }
     .wave .content{
-        height: 250px;
+        height: 350px;
     }
 }
 .aboutcontainer{
@@ -476,9 +469,9 @@ position: absolute;
     flex-wrap: nowrap;
 }
 .abouttext p{
-    font-size:28px;
+    font-size:22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 120%;
     max-width:909px;
     margin-left: 23px;
@@ -486,7 +479,7 @@ position: absolute;
 .abouttextmain{
     position: relative;
     display: flex;
-    padding: 100px 0 50px;
+    padding: 120px 0 60px;
     max-width: 1800px;
     margin: auto;
 }
@@ -507,15 +500,22 @@ position: absolute;
 }
 .abouttextmain img{
     max-width: 100%;
+    margin-bottom: 2%;
 }
 .abouttextmain sub{
     display: flex;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.1;
     justify-content: center;
     text-align: center;
     margin: auto;
     margin-top: 30px;
-    line-height: 90%;
+    line-height: 10%;
+}
+.abouttextmain sub:hover{
+    letter-spacing: 1.5;
+    transition: 1s all ease-in-out;
 }
 .reveal{
     position: relative;
@@ -528,16 +528,20 @@ position: absolute;
     opacity: 1;
 } 
 .bgs-web-aboutt:hover{
-  max-width: calc(100% + 5%);
-  transition: 1s all ease-in-out;
-  margin-right: 95px;
+  width: calc(100% + 2%);
+  max-width: calc(100% + 2%);
+  transition: 0.2s all ease-in-out;
+  margin-bottom: 1%;
 }
 @media screen and (max-width:1250px) {
     .about{
-    padding:70px 10px 300px 10px;
+    padding:110px 10px 300px 10px;
     }
 }
 @media screen and (max-width:990px) {
+    .about{
+    padding:90px 10px 300px 10px;
+    }
     .bgs-web-aboutt{
         max-width: 350px;
     }
@@ -569,6 +573,11 @@ position: absolute;
         padding: 60px 40px;
         max-width: 1000px;
     }
+    .abouttextmain img{
+        display: flex;
+        margin: auto;
+        max-width: 350px;
+    }
     .abouttextmain p{
         display: flex;
         flex-direction: column;
@@ -577,6 +586,7 @@ position: absolute;
         font-size: 12px;
         font-weight: 500;
         line-height: 200%;
+        margin: auto;
         margin-top: 40px
     }
 }
@@ -615,9 +625,9 @@ position: absolute;
     flex-wrap: nowrap;
 }
 .servicestitle p{
-    font-size:28px;
+    font-size:22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 120%;
     max-width: 635px;
     margin-left: 23px;
@@ -627,10 +637,10 @@ swiper-container.mySwiper {
     width: 100%;
     max-width: 9999px;
     height: 100%;
-    max-height: 705px;
+    max-height: 605px;
     cursor: grab;
     margin: 0;
-    margin-top: -150px;
+    margin-top: -200px;
   }
   swiper-slide.swiper1 {
     position: relative;
@@ -650,7 +660,7 @@ swiper-container.mySwiper {
     height: 100%;
     max-height: 480px;
     z-index: 999;
-    margin-top: -20px;
+    margin-top: -120px;
 }
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
@@ -812,7 +822,7 @@ swiper-container.mySwiper {
     max-width: 1340px;
     margin: auto;
     display: flex;
-    padding: 320px 50px 40px 50px;
+    padding: 320px 50px 60px 50px;
 }
 .preferencecontainer .bgs-web{
     max-height: 1400px;
@@ -821,15 +831,15 @@ swiper-container.mySwiper {
     font-size: 20px;
     font-weight: 500;
     z-index: 9;
-    max-width: 100px;
+    max-width: 200px;
     color: #FFF;
 }
 .preference p{
     color: #E8C948;
     z-index: 9;
-    font-size:28px;
+    font-size:22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 120%;
     max-width: 529px;
     margin-left: 23px;
@@ -950,7 +960,7 @@ swiper-container.mySwiper {
     font-family: 'Urbanist', sans-serif;
     max-width: 965px;
     margin: auto;
-    margin-top: -450px;
+    margin-top: -300px;
     float: right;
     padding-right: 50px;
 }
@@ -965,9 +975,9 @@ swiper-container.mySwiper {
 .portifolio p{
     color: #030606;
     z-index: 9;
-    font-size:28px;
+    font-size:22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 120%;
     max-width: 735px;
     margin-left: 23px;
@@ -984,7 +994,8 @@ swiper-container.mySwiper2 {
   height: 100%;
   max-height: 735px;
   cursor: grab;
-    margin: 0 ;
+    margin: 0;
+    margin-top: -200px;
 }
 swiper-slide.swiper2 {
   max-width: 706px;
@@ -1191,7 +1202,7 @@ swiper-slide.swiper2 {
     margin-top: -300px;
 }
 .reviewstitle{
-    margin-top: -200;
+    margin-top: -150;
     float: left;
     display: flex;
     padding-left: 50px;
@@ -1207,9 +1218,9 @@ swiper-slide.swiper2 {
 .reviewstitle p{
     color: #030606;
     z-index: 9;
-    font-size:28px;
+    font-size:22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 120%;
     max-width: 430px;
     margin-left: 23px;
