@@ -553,7 +553,7 @@ position: absolute;
         font-size: 12;
     }
     .abouttext p{
-        font-size: 24px;
+        font-size: 18px;
         margin: 0;
         margin-top: 10px;
     }
@@ -753,7 +753,7 @@ swiper-container.mySwiper {
         font-weight: 600;
     }
     .servicestitle p{
-        font-size: 24px;
+        font-size: 18px;
         max-width: 800px;
         margin: auto;
         margin-top: 10px;
@@ -779,7 +779,7 @@ swiper-container.mySwiper {
         max-height: 605px;
         cursor: grab;
         margin: 0;
-        margin-top: 0px;
+        margin-top: -190px;
       }
 } 
   .wavec1{
@@ -913,7 +913,7 @@ swiper-container.mySwiper {
         font-weight: 600;
     }
     .preference p{
-        font-size:24px;
+        font-size: 18px;
         max-width: 800px;
         margin: 0;
         margin-top: 10px;
@@ -1076,18 +1076,13 @@ swiper-slide.swiper2 {
     .portifolio h2{
         display: flex;
         font-size: 12px;
-        font-weight: 500;
-        z-index: 9;
         max-width: 100px;
         color: #030606;
     }
     .portifolio p{
         color: #030606;
         z-index: 9;
-        font-size:24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
+        font-size: 18px;
         max-width: 729px;
         margin: 0;
         margin-top: 10px;
@@ -1314,7 +1309,6 @@ swiper-slide.swiper2 {
     .reviewstitle h2{
         display: flex;
         font-size: 12px;
-        font-weight: 500;
         z-index: 9;
         max-width: 100px;
         color: #030606;
@@ -1322,10 +1316,7 @@ swiper-slide.swiper2 {
     .reviewstitle p{
         color: #030606;
         z-index: 9;
-        font-size:24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
+        font-size: 18px;
         max-width: 430px;
         margin-top: 10px;
         margin-left: 0;
