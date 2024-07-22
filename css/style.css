@@ -49,7 +49,7 @@ header {
     display: block;
     position: relative;
     background-color: transparent;
-    width: 200px;
+    width: 270px;
 }
 .navbar{   
     display:flex;
@@ -61,10 +61,11 @@ header {
     top: 0;
     z-index: 99;
     width: 100%;
-    max-width: 9999px;
-    margin: auto;
+    max-width: 1400px;
+    margin: 10px auto;
+    border-radius: 50px;
     background-color:#33333340;
-    padding: 0px 50px 5px 0px;
+    padding: 0px 50px 5px 50px;
     height: 80px;
     scroll-behavior: smooth;
     transition: 0.7s;
@@ -99,8 +100,7 @@ header {
 }
 .menu-linksbtn a:hover{
     color: #DCCABC;
-    transition: 0.5s ease-in-out;
-    letter-spacing: 0.7;
+    transition: 0.2s ease-in-out;
 }
 .menusocial{
     right: 0;
@@ -111,55 +111,66 @@ header {
     align-items: center;
     margin: 0 auto;
     justify-content:space-between;
-    width:200px;
+    width:270px;
     text-align: center;
+    gap: 8px;
 }
 .menusocial ul a {
     text-decoration:none;
     cursor: pointer;
     align-items: center;
 }
-.menusocial li:first-child{
-    display: inline-flex;
-    margin-right: 5px;
+.menusocial ul a svg{
+  fill: #030606;
+}
+.menusocial ul a svg circle{
+  fill: #DCCABC;
+}
+.menusocial ul a:hover svg{
+  fill: #000;
+  transition: 0.2s ease-in-out;
+}
+.menusocial ul a:hover svg circle{
+  fill: #E8C948;
+  transition: 0.2s ease-in-out;
+}
+.callnow{
     background-color: #DCCABC;
     border-radius: 20px;
+    border: none;
 }
-.menusocial a:first-child{
+.callnow a{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     color: #000;
     font-family: 'Urbanist', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    font-weight: 700;
+    line-height: 120%;
     align-items: center;
     padding: 8px 0px;
-    width: 119px;
-}
-
-.menu-linksbtn a:hover,
-.menu-linksbtn a.active {
-  transition: 0.5s ease-out;
-  letter-spacing: 1.2px;
+    width: 149px;
 }
 .btn-toggle{display: none;}
 .logo-m{
 z-index: 9;
 display:block;
-width: 75px;
-top: -25px;
+width: 95px;
+top: -30px;
 left: 25px;
 position: absolute;
 }
 .logow{display: none;}
 @media only screen and (max-width: 1100px) {
     .logow{
-    z-index: 9;
-    display:block;
-    width: 65px;
-    top: 15px;
-    left: 25px;
-    position: absolute;
+        position: absolute;
+        z-index: 9;
+        display:block;
+        width: 99px;
+        top: 5px;
+        left: 25px;
     }
     .logo-m{display: none;}
   .box{
@@ -220,73 +231,50 @@ position: absolute;
   .active .line3{
     transform: translate(0px , 1px)rotate(-45deg);
   }
-  .imglogo-m{
-      position: absolute;
-      display: block;
-      z-index: 999;
-      left: 1.9rem;
-      top: 0.6rem;
-  }
-  .imglogo-m img{
-      width: 100%;
-      max-width: 70px;
-      margin: auto;
-      padding: 0px;
-  }
   .menu-links{
-    background-color:#33333340;
-  flex-direction: column;
-  align-items:center;
-  margin-top: 80px;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 0px;
-  border-bottom-right-radius: 32px;
-  border-bottom-left-radius: 32px;
-  height:380px
+    background-color:#333333d0;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 80px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 80px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    height:250px;
   }
   .menu-links ul{
       display: block;
-      margin-right: 10px;
-  }
-  .menu-links a {
-  padding:.25rem 2rem
+      margin-top: -50px;
   }
   .menu-linksbtn{
       display: flex;
       margin-bottom: 20px;
   }
+  .menu-linksbtn ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu-linksbtn a{
+    max-width: 100px;
+    margin: auto;
+  }
   .menusocial ul{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: 150;
+      width: 150px;
       justify-content: center;
       margin: auto;
+      margin-top: -50px;
+      padding-top: 30px;
       margin-bottom: 10px;
-  }
-  .menusocial ul li:last-child{
-      margin-left:5;
   }
   .menusocial ul a {
       text-decoration:none;
       cursor: pointer;
-      align-items: center;
-  }
-  .menusocial li:first-child{
-      display: inline-flex;
-      padding: 2px 4px;
-      gap: 8px;
-      border: 1px solid #DCCABC;
-      margin-bottom: 10px;
-      border-radius: 20px;
-  }
-  .menusocial a:first-child{
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 110%;
       align-items: center;
   }
   .menu-links.active{
@@ -298,7 +286,12 @@ position: absolute;
       display:flex
   }
   .navbar {
-  padding:0px 0px;
+    padding:0px 0px;    
+    margin: auto;
+    margin-top: 0;
+    backdrop-filter: none;
+    border-radius: 0;
+    background-color: #333333d0;
   }
   #home {
   display:flex;
@@ -449,7 +442,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1350px;
+    max-width: 1450px;
     margin: auto;
     justify-content: space-between;
     padding:0px 50px 400px 50px;
@@ -482,16 +475,19 @@ position: absolute;
     padding: 120px 0 60px;
     max-width: 1800px;
     margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 .abouttextmain p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 282px;
-    font-size: 12px;
+    max-width: 382px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 200%;
     margin-left: 100px;
+    letter-spacing: 1;
 }
 .abouttextmain p span{
     display: flex;
@@ -500,6 +496,7 @@ position: absolute;
 }
 .abouttextmain img{
     max-width: 100%;
+    width: 550px;
     margin-bottom: 2%;
     margin-left: 1%;
 }
@@ -529,11 +526,9 @@ position: absolute;
     opacity: 1;
 } 
 .bgs-web-aboutt:hover{
-  width: calc(100% + 1%);
+  width: 560px;
   max-width: calc(100% + 1%);
-  transition: 0.2s all ease-in-out;
-  margin-bottom: 1%;
-  margin-left: 0%;
+  transition: 0.1s all ease-in;
 }
 @media screen and (max-width:1250px) {
     .about{
@@ -634,108 +629,89 @@ position: absolute;
     max-width: 635px;
     margin-left: 23px;
 }
-
-swiper-container.mySwiper {
-    width: 100%;
-    max-width: 9999px;
-    height: 100%;
-    max-height: 605px;
-    cursor: grab;
-    margin: 0;
-    margin-top: -200px;
-  }
-  swiper-slide.swiper1 {
-    position: relative;
-    z-index: 9999;
-    max-width: 310px;
-    border-radius: 30px;
-    margin-left: 0px;
-    padding-bottom: 40px;
-  }
-
-.cardcontainer{
+.swipergrid{
     position: relative;
     background-color: #DCCABC;
     width: 100%;
-    max-width: 9500px;
+    max-width: 9999px;
     margin: auto;
     height: 100%;
-    max-height: 480px;
+    max-height: 680px;
     z-index: 999;
     margin-top: -120px;
 }
-/* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer{
-    display: flex;
-    position: relative;
-    background-color: #DCCABC;
-    width: 100%;
-    max-width: 1350px;
-    margin: auto;
-    height: 100%;
-    max-height: 440px;
+swiper-slider{
+    overflow: hidden;
 }
-
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
-.card{
-  position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    top: 0;
-  left: 0;
+.mySwiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 1350px;
   height: 100%;
+    height: 517px;
+    cursor: grab;
+  margin: auto !important;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.swiper1 {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+  max-width: 313px;
+  height: 410px;
+  border-radius: 24px;
+  margin-left: 15px;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.swiper1:hover {
+    box-shadow: 10px 10px 16px rgba(36, 36, 36, 0.5); 
+    transition: 0.2s ease-in;
+}
+.swiper1 img {
+  width: 100% !important;
+  max-width: none !important;
   margin: auto;
-  transition: all 0.8s ease;
-  color: #FFF;
+  justify-content: start;
+  object-fit: cover !important;
 }
-.card h2, .card p{
+.cardinfos svg{
     position: absolute;
+    top: 33px;
+    left: 24px;
 }
-.card h2,.card h2 svg{
+.cardinfos h6{
+    font-size: 24px;
+    position: absolute;
+    font-weight: 500;
+    line-height: 140%;
+    color: #fff;
+    max-width: 190px;
+    bottom: 75px;
+    left: 24px;
+}
+.servicesbtn{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    top: 20;
-    width: 100%;
-    margin: auto;
-}
-.card h2{
-    font-size: 20px;
-    font-weight: bold;
-}
-.card h2 svg{
-    margin-bottom: 5px;
-}
-.card p{
-    top: 120;
-    padding: 0 10px;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.5;
-    line-height: 130%;
-}
-@media screen and (max-width:1300px) {
-    .maincontainer{
-        display: flex;
-        row-gap: 24px;
-        max-width: 930px;
-    }
-    .thecard{
-        margin-right: 20px;
-    }
-    .servicescontainer{
-        max-height: 990px;
-    }
-    .cardcontainer{
-        margin-top: 0px;
-    }
-    .servicestitle{    
-        margin-top: -400px;
-    }
+    justify-content: center;
+    list-style: none;
+    border: none;
+    color: #fff;
+    border-radius: 16px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 150px;
 }
 @media screen and (max-width:990px) {
     .services{
@@ -760,29 +736,6 @@ swiper-container.mySwiper {
         margin: auto;
         margin-top: 10px;
     }
-    .maincontainer{
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-    }    
-    .cardcontainer{
-        max-height: 570px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 100px;
-    }
-    swiper-container.mySwiper {
-        width: 100%;
-        max-width: 9999px;
-        height: 100%;
-        max-height: 605px;
-        cursor: grab;
-        margin: 0;
-        margin-top: -190px;
-      }
 } 
   .wavec1{
       position: absolute;
@@ -1442,12 +1395,9 @@ form button{
     padding: 10px;
     margin: auto;
     background-color: #E8C948;
-    border: 2px solid #fff;
+    border: none;
+    border: 1px solid #E8C948;
     cursor: pointer;
-}
-form button:hover{
-    background-color: #E8C948cc;
-    transition: 0.7s;
 }
 .form h6{
     display: flex;
@@ -1511,46 +1461,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%;
  }
-/*.popup{
-    position: absolute;
-    margin-top: 200px;
-    width: 800px;
-    height: 500px;
-    background-color: #FFF;
-    text-align: center;
-    border-radius: 30px;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    padding: 10px 20px;
-    z-index: 99999;
-    font-family: 'Urbanist', sans-serif;
-    visibility: hidden;
-}
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-.popup img{
-    width: 300px;
-    z-index: 99999;
-    margin: auto;
-}
-.popup h5{
-    margin-top: 30px;
-    color: #000;
-    font-size: 25px;
-}
-.popupbtnclose{
-    cursor: pointer;
-    width: 200px;
-    padding: 16px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
-    border: none;
-} */
 @media screen and (max-width:1250px) {
     .bgs-web{
         display: none;
@@ -1734,8 +1644,8 @@ footer{
     line-height: 130%;
 }
 .footermenu ul li a:hover {
-    color: #dad2b3;
-    transition: 0.5s;
+    color: #E8C948;
+    transition: 0.2s;
 }
 .footermenu ul{
     list-style: none;
@@ -1765,7 +1675,7 @@ footer{
     width: auto;
     font-size: 16px;
     font-weight: 500;
-    line-height: 130%;
+    line-height: 150%;
 }
 .footersocials{
     width: auto;
@@ -1780,7 +1690,6 @@ footer{
     padding-bottom: 15px;
 }
 .footersocials span{
-    padding-left: 10px;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1790,12 +1699,25 @@ footer{
     list-style: none;
     display: flex;
     text-align: center;
-    gap: 18px;
+    gap: 8px;
     padding-top: 10px;
-    padding-left: 5px;
 }
 .footersocials ul a{
     text-decoration: none;
+}
+.footersocials ul a svg{
+  fill: #030606;
+}
+.footersocials ul a svg circle{
+  fill: #FFF6D1;
+}
+.footersocials ul a:hover svg{
+  fill: #000;
+  transition: 0.2s ease-in-out;
+}
+.footersocials ul a:hover svg circle{
+  fill: #E8C948;
+  transition: 0.2s ease-in-out;
 }
 .rights{
     position: relative;
@@ -1914,4 +1836,122 @@ footer{
 }
 :root {
     --scroll: 0
+}
+.popuptest{
+    position: relative;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;    
+    z-index: 99;
+    padding: 50px 50px 0;
+    background-color: #DCCABC;
+}
+.popupgrid{
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+}
+.popup .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 680px;
+    z-index: 1;
+    gap: 32px;
+    padding: 200px 30px 100px 30px;
+    color: #000;
+    font-family: 'Urbanist';
+}
+.popupimg{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    flex-shrink: 1;
+}
+.callnowpopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 8px 6px;
+    color:#000;
+    background-color: #E8C948;
+    border-radius: 72px;
+    width:180px;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 9px;
+    border: 1px solid #E8C948;
+    line-height: 100%;
+    text-decoration: none; 
+}
+.popup .content .popttlbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.callnowpopup{
+    margin-left: 0;
+}
+.popup .content h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 48px */
+text-transform: uppercase;
+}
+.content h1 svg{
+    margin: auto;
+    margin-top: 20px;
+}
+.popup .content p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+}
+@media screen and (max-width:800px) {
+    .popuptest{padding: 0 0 30px;}   
+    .popup .popupimg{
+        max-width: 900px;
+    } 
+    .popup .content{max-width: 450px;}
+    .popup .content h1{
+        font-size: 38px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.callnow:hover, .contactbtn:hover{
+    text-decoration: none;
+    background-color: #E8C948;
+    transition: 0.2s ease-in-out;
+}
+.servicesbtn:hover{
+    color: #000;
+    background-color: #FFF;
+    transition: 0.2s ease-in-out;
+}
+.callnow:hover svg{
+    fill: white;
+    transition: 0.2s ease-in-out;
+}
+.callnowpopup:hover, form button:hover{
+    border: 1px solid #000;
+    background-color: #FFF;
+    transition: 0.2s all ease-in-out;
+}
+.callnowpopup:hover svg{
+    fill: #fff;
+    transition: 0.2s all ease-in-out;
 }
