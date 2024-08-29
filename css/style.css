@@ -607,7 +607,7 @@ position: absolute;
     font-family: 'Urbanist', sans-serif;
     max-width: 795px;
     margin: auto;
-    margin-top: -450px;
+    margin-top: -250px;
     padding-right: 40px;
     float: right;
 }
@@ -633,7 +633,7 @@ position: absolute;
     height: 100%;
     max-height: 680px;
     z-index: 999;
-    margin-top: -120px;
+    margin-top: -150px;
 }
 swiper-slider{
     overflow: hidden;
@@ -1068,7 +1068,7 @@ swiper-slide.swiper2 {
     max-width: 3999px;
     margin: auto;
     height: 100%;
-    max-height: 430px;
+    max-height: 500px;
     background-color: #fff;
     z-index: 999;
 }
@@ -1115,7 +1115,26 @@ swiper-slide.swiper2 {
     opacity: 70%;
     top: -200;
 }
-
+.btnreview{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.btnreview button{
+    border: none;
+    background-color: transparent;
+}
+.btnreview a{
+    background-color: #DCCABC;
+    padding: 13px 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.btnreview a:hover{
+    background-color: #E8C948;
+}
 /* IG CONTAINER */
 .ig-embed{
     position: relative;
@@ -1990,4 +2009,26 @@ a{
 .callnowpopup:hover svg{
     fill: #fff;
     transition: 0.2s all ease-in-out;
+}
+.thankscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCCABC;
+    color: #000;
+    height: 100%;
+    text-align: center;
+    gap: 80px;
+}
+.thankscontainer svg{
+    max-width: 150px;
+}
+.thankscontainer p{
+    max-width: 1100px;
+    padding: 0 20px;
+    font-size: 50px;
+}
+.thankscontainer .btnreview a{
+    border: 1px solid #000;
 }
