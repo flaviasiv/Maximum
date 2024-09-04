@@ -162,7 +162,7 @@ top: -30px;
 left: 25px;
 position: absolute;
 }
-.logow{display: none;}
+.logow, .logow a, .callm{display: none;}
 @media only screen and (max-width: 1100px) {
     .logow{
         position: absolute;
@@ -172,7 +172,14 @@ position: absolute;
         top: 5px;
         left: 25px;
     }
-    .logo-m{display: none;}
+    .callm{display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+    .logo-m, .callw{display: none;}
   .box{
     width: fit-content;
     height: 0vh;
@@ -242,7 +249,7 @@ position: absolute;
     margin-top: 80px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:250px;
+    height:230px;
   }
   .menu-links ul{
       display: block;
@@ -269,7 +276,7 @@ position: absolute;
       justify-content: center;
       margin: auto;
       margin-top: -50px;
-      padding-top: 30px;
+      padding-top: 0px;
       margin-bottom: 10px;
   }
   .menusocial ul a {
