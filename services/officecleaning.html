@@ -157,30 +157,34 @@
        <div class="form" id="contact">
          <img src="../assets/maximumlogoprimary.png" alt="" class="logoform" draggable="false">
            <p>Are you ready to set up service? Connect with us for an affordable quote and to book an appointment with us.</p>
-         <form action="https://formspree.io/f/xovajddo" method="POST" id="form">
-           <div class="formgroup1">
-           <input type="text" required placeholder="First name*" autocomplete="on" name="name" id="name">
-           <input type="text" required placeholder="Last name*" autocomplete="on" name="name" id="lastname">
-           </div>
-           <input required type="tel" autocomplete="on" id="phone" name="phone" placeholder="Phone*" minlength="5">
-           <input type="email" autocomplete="on" id="email" name="email" placeholder="Email address" minlength="5" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-           <input type="address" autocomplete="on" id="address" name="address" placeholder="Address">
-                           
-             <select id="servicestype" required placeholder="Services*" name="services" form="form">
-               <option value="first" selected style="color: gray;">-Services-*</option>
-               <option value="residential">Residential Cleaning</option>
-               <option value="renovation">After Renovation Cleaning</option>
-               <option value="moving">Move-in / Move-out Cleaning</option>
-               <option value="postconstruction">Post Construction</option>
-             </select>
-             <input type="hidden" name="_next" value="https://maximumshinecleaning.com/">
-             <button type="submit" class="btn" onclick="openPopup()">Submit</button>
-             <!-- <div class="popup" id="popup"> -->
-               <!-- <img src="../assets/orlandis-logoprimary.png" alt="" draggable="false"> -->
-               <!-- <h5>Thank you for submitting your request. One of our customer representatives will be in touch with you shortly. </h5> -->
-               <!-- <button class="popupbtnclose" type="button" onclick="closePopup()">Close</button> -->
-             <!-- </div> -->
-         </form>
+          <form action="https://formspree.io/f/xovajddo" method="POST" id="form">
+            <div class="formgroup1">
+              <label for="name">
+            <input type="text" required placeholder="First name*" autocomplete="on" name="name" id="name"></label>
+            <label for="lastname">
+            <input type="text" required placeholder="Last name*" autocomplete="on" name="name" id="lastname"></label>
+            </div>
+            <label for="phone">
+            <input required type="tel" autocomplete="on" id="phone" name="phone" placeholder="Phone*" minlength="5"></label>
+            <label for="email">
+            <input type="email" autocomplete="on" id="email" name="email" placeholder="Email address" minlength="5" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></label>
+            <label for="address">
+            <input type="address" autocomplete="on" id="address" name="address" placeholder="Address"></label>
+              <label for="servicestype">
+              <select id="servicestype" required placeholder="Services*" name="services" form="form">
+                <label for="null">
+                <option id="selectservice-null" value="first" selected style="color: gray;">Select Service*</option></label>
+                <label for="residential">
+                <option id="residential" value="residential">Residential Cleaning</option></label>
+                <label for="renovation">
+                <option id="renovation" value="renovation">After Renovation Cleaning</option></label>
+                <label for="moving">
+                <option id="moving" value="moving">Move-in / Move-out Cleaning</option></label>
+                <label for="postconstruction">
+                <option id="postconstruction" value="postconstruction">Post Construction</option></label>
+              </select></label>
+              <button type="submit" class="btn">Submit</button>
+          </form>
      </div>
          <div class="mapsfooter">
            <div class="mapinfo">

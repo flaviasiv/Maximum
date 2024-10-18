@@ -47,23 +47,23 @@ document.onclick = function(e){
 // });
 
 // scroll behavior
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+// function reveal() {
+//   var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 100;
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var elementTop = reveals[i].getBoundingClientRect().top;
+//     var elementVisible = 100;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
+//     if (elementTop < windowHeight - elementVisible) {
+//       reveals[i].classList.add("active");
+//     } else {
+//       reveals[i].classList.remove("active");
+//     }
+//   }
+// }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
 
 //cards flip ao clicar
 
@@ -84,3 +84,12 @@ window.addEventListener("scroll", reveal);
 // function closePopup(){
 //   popup.classList.remove("open-popup");
 // }
+
+
+document.addEventListener('aos:in', ({ detail }) => {
+  console.log('animated in', detail);
+});
+
+document.addEventListener('aos:out', ({ detail }) => {
+  console.log('animated out', detail);
+});
