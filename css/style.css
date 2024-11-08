@@ -128,7 +128,7 @@ header {
   transition: 0.2s ease-in-out;
 }
 .menusocial ul a:hover svg circle{
-  fill: #E8C948;
+  fill: #fff;
   transition: 0.2s ease-in-out;
 }
 .callnow{
@@ -968,7 +968,7 @@ swiper-slider{
 
 :root {
     --swiper-navigation-color: #eee;
-    --swiper-pagination-color: #E8C948;
+    --swiper-pagination-color: #fff;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
 }
@@ -2015,7 +2015,7 @@ a{
 }
 .callnow:hover, .contactbtn:hover{
     text-decoration: none;
-    background-color: #E8C948;
+    background-color: #fff;
     transition: 0.1s ease-in-out;
 }
 .servicesbtn:hover{
